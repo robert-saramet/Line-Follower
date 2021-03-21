@@ -39,19 +39,19 @@ void followLine(){
     }
     else if (ls[1][1]==0 && ls[2][1]==1 && ls[3][1]==1 && ls[4][1]==0 && ls[5][1]==0){ 
         Serial.println("01100");
-        steer(64, 255);
+        steer(0, 255);
         robot.backwardA();
         robot.forwardB();
     }
     else if (ls[1][1]==0 && ls[2][1]==1 && ls[3][1]==0 && ls[4][1]==0 && ls[5][1]==0){ 
         Serial.println("01000");
-        steer(128, 255);
+        steer(80, 255);
         robot.backwardA();
         robot.forwardB();
     }
     else if (ls[1][1]==1 && ls[2][1]==1 && ls[3][1]==0 && ls[4][1]==0 && ls[5][1]==0){ 
         Serial.println("11000");
-        steer(192, 255);
+        steer(160, 255);
         robot.backwardA();
         robot.forwardB();
     }
@@ -63,19 +63,19 @@ void followLine(){
     }
     else if (ls[1][1]==0 && ls[2][1]==0 && ls[3][1]==1 && ls[4][1]==1 && ls[5][1]==0){ 
         Serial.println("00110");
-        steer(255, 64);
+        steer(255, 0);
         robot.forwardA();
         robot.backwardB();
     }
     else if (ls[1][1]==0 && ls[2][1]==0 && ls[3][1]==0 && ls[4][1]==1 && ls[5][1]==0){ 
         Serial.println("00010");
-        steer(255, 128);
+        steer(255, 80);
         robot.forwardA();
         robot.backwardB();
     }
     else if (ls[1][1]==0 && ls[2][1]==0 && ls[3][1]==0 && ls[4][1]==0 && ls[5][1]==1){ 
         Serial.println("00011");
-        steer(255, 192);
+        steer(255, 160);
         robot.forwardA();
         robot.backwardB();
     }
