@@ -1,3 +1,7 @@
+// github repo at https://github.com/robert-saramet/Line-Follower
+// using L298N library found at https://github.com/AndreaLombardo/L298N
+// using 5 sensor cytron maker line (digital inputs)
+
 #include <Arduino.h>
 #include <L298NX2.h>
 
