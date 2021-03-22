@@ -2,6 +2,19 @@
 // using L298N library found at https://github.com/AndreaLombardo/L298N
 // using 5 sensor cytron maker line (digital inputs)
 
+/*
+ ----------------   ----------------------    
+ | Mega | L298N |   | Mega | Line Sensor |
+ |------|-------|   |------|-------------|
+ |  2   |  IN1  |   |  22  |      D1     |
+ |  3   |  IN2  |   |  23  |      D2     |
+ |  4   |  IN3  |   |  24  |      D3     |
+ |  5   |  IN4  |   |  25  |      D4     |
+ |  6   |  ENA  |   |  26  |      D5     |
+ |  7   |  ENB  |   |---------------------
+ ----------------   
+*/
+
 #include <Arduino.h>
 #include <L298NX2.h>
 
